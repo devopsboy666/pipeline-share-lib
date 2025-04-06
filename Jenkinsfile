@@ -4,6 +4,13 @@ pipeline {
     agent any
 
     stages {
+
+        stage('Clear Workspace') {
+            steps {
+                cleanWs()
+            }
+        }
+        
         stage('Git Clone') {
             steps {
                 script {

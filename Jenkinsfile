@@ -8,7 +8,7 @@ pipeline {
             steps {
                 script {
                     try {
-                        gitClone('https://github.com/myuser/myrepo.git', 'main')
+                        gitClone('https://github.com/devopsboy666/pipeline-share-lib.git', 'main')
                     } catch (e) {
                         error("❌ Stage Git Clone failed: ${e.message}")
                     }

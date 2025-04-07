@@ -5,7 +5,7 @@ FROM python:3.8-slim
 WORKDIR /app
 
 # ติดตั้ง dependencies จาก requirements.txt
-RUN pip install --no-cache-dir -r flask
+RUN pip install --no-cache-dir flask
 
 # คัดลอกไฟล์ทั้งหมดจาก directory ปัจจุบัน (ในเครื่องเรา) ไปยัง /app ใน container
 COPY . /app/

@@ -27,7 +27,7 @@ pipeline {
             steps {
                 script {
                     try {
-                        buildImage('flask-docker-app', 'v1')
+                        buildImage('flask-docker-app', 'v1', 'pipeline-share-lib')
                     } catch (e) {
                         error("❌ Stage Docker Build failed: ${e.message}")
                     }

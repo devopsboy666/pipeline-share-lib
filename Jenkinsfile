@@ -35,17 +35,6 @@ pipeline {
             }
         }
 
-        stage('Run Docker') {
-            steps {
-                script {
-                    try {
-                        deployApp('flask-docker-app', 'v1')
-                    } catch (e) {
-                        error("❌ Stage Docker Run failed: ${e.message}")
-                    }
-                }
-            }
-        }
     }
 
     post {

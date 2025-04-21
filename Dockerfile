@@ -1,5 +1,5 @@
 # ใช้ Python 3.8 เป็น base image
-FROM python:3.8-slim
+FROM python:3.8
 
 # กำหนด directory ภายใน container สำหรับการทำงาน
 WORKDIR /app

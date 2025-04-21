@@ -40,9 +40,11 @@ pipeline {
     post {
         failure {
             echo "📛 Pipeline failed!"
+            cleanWs()
         }
         success {
             echo "✅ Pipeline completed successfully!"
+            cleanWs()
         }
     }
 }
